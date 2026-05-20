@@ -1,0 +1,12 @@
+{
+  "id": "PROD-4521",
+  "title": "NullPointerException in PaymentService at checkout",
+  "status": "open",
+  "severity": null,
+  "labels": [],
+  "assignee": null,
+  "opened_at": "2026-05-19T14:18:23Z",
+  "reporter": "monitoring-alerts@bts-synthetic.example",
+  "body": "p99 latency on /checkout has jumped from 800ms to 8.2s over the last 14 minutes. Error rate is up 340%. Stack trace from sampled requests:\n\njava.lang.NullPointerException\n  at com.bts.payments.PaymentService.processCharge(PaymentService.java:142)\n  at com.bts.payments.PaymentController.charge(PaymentController.java:67)\n  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\nAffected: ~2,400 active checkouts. Region: us-east-1, eu-west-2.",
+  "comments": []
+}

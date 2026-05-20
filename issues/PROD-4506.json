@@ -1,0 +1,12 @@
+{
+  "id": "PROD-4506",
+  "title": "Add support for parallel batch jobs in worker pool",
+  "status": "open",
+  "severity": null,
+  "labels": [],
+  "assignee": null,
+  "opened_at": "2026-05-15T16:01:00Z",
+  "reporter": "priya.shah@bts-synthetic.example",
+  "body": "Currently the worker pool serialises batch jobs. For the new ingestion pipeline we'll need to run up to 8 concurrent batches. Proposing we extend WorkerPool with a max_concurrency setting, default 1, and update the dispatcher to honour it. Would also want a simple back-pressure signal.",
+  "comments": []
+}

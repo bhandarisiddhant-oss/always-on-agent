@@ -1,0 +1,12 @@
+{
+  "id": "PROD-4498",
+  "title": "Login endpoint occasionally returns 502 for ~30s windows",
+  "status": "open",
+  "severity": null,
+  "labels": [],
+  "assignee": null,
+  "opened_at": "2026-05-12T22:14:55Z",
+  "reporter": "monitoring-alerts@bts-synthetic.example",
+  "body": "Synthetic monitoring detected 3 separate 502 windows in the last 24 hours on POST /auth/login. Each lasted 25-35 seconds, then resolved itself. No deploys in the relevant time windows. Auth service pods show no restarts. Load balancer logs show upstream timeouts. Possible connection pool exhaustion?",
+  "comments": []
+}

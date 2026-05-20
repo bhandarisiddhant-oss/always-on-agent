@@ -1,0 +1,12 @@
+{
+  "id": "PROD-4519",
+  "title": "Slow image uploads in mobile app",
+  "status": "open",
+  "severity": null,
+  "labels": [],
+  "assignee": null,
+  "opened_at": "2026-05-18T09:42:11Z",
+  "reporter": "customer-support@bts-synthetic.example",
+  "body": "Customers reporting 30-60s upload times for product photos in the mobile app. Started intermittently 2 days ago, now consistent. iOS and Android both affected. CDN dashboard shows normal traffic patterns. Backend logs show no errors but latency on POST /uploads/images has tripled.",
+  "comments": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PROD-4487",
+  "title": "Customer 'cannot complete checkout' (Acme Corp, 2400 users)",
+  "status": "open",
+  "severity": null,
+  "labels": ["customer-impact"],
+  "assignee": null,
+  "opened_at": "2026-05-20T07:33:09Z",
+  "reporter": "customer-success@bts-synthetic.example",
+  "body": "Enterprise customer Acme Corp (2,400 seats) reporting that none of their users can complete checkout as of 07:25 UTC. They've sent screenshots showing a spinner that never resolves on the payment confirmation step. Other customers do not appear affected — this looks tenant-specific. Acme's CTO is on a call with our CSM in 25 minutes.",
+  "comments": []
+}

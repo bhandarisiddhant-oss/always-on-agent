@@ -1,0 +1,67 @@
+{
+  "deploys": [
+    {
+      "service": "payment-service",
+      "version": "v4.8.2",
+      "deployed_at": "2026-05-19T14:04:11Z",
+      "deployed_by": "tom.bryce@bts-synthetic.example",
+      "commit": "9f4a1c8",
+      "summary": "Add guest checkout support",
+      "files_changed": [
+        "PaymentService.java",
+        "PaymentController.java",
+        "CheckoutRequest.java"
+      ],
+      "rollback_available": true,
+      "last_known_good": "v4.8.1"
+    },
+    {
+      "service": "signing-service",
+      "version": "v2.1.4",
+      "deployed_at": "2026-05-17T11:22:00Z",
+      "deployed_by": "yuki.tanaka@bts-synthetic.example",
+      "commit": "a87f2dd",
+      "summary": "Reduce URL TTL for security review",
+      "files_changed": ["config/prod.yaml"],
+      "rollback_available": true,
+      "last_known_good": "v2.1.3"
+    },
+    {
+      "service": "auth-service",
+      "version": "v6.0.0",
+      "deployed_at": "2026-05-14T08:15:42Z",
+      "deployed_by": "maya.singh@bts-synthetic.example",
+      "commit": "33ba109",
+      "summary": "Major: switch session storage to Redis",
+      "files_changed": [
+        "SessionStore.java",
+        "config/prod.yaml",
+        "infrastructure/redis.tf"
+      ],
+      "rollback_available": false,
+      "last_known_good": "v5.9.7"
+    },
+    {
+      "service": "frontend",
+      "version": "v12.4.1",
+      "deployed_at": "2026-05-20T06:50:33Z",
+      "deployed_by": "ci-bot@bts-synthetic.example",
+      "commit": "ee23d44",
+      "summary": "Minor: copy update on pricing page",
+      "files_changed": ["src/pages/pricing.tsx"],
+      "rollback_available": true,
+      "last_known_good": "v12.4.0"
+    },
+    {
+      "service": "tenant-config-service",
+      "version": "v3.2.1",
+      "deployed_at": "2026-05-20T07:12:08Z",
+      "deployed_by": "ci-bot@bts-synthetic.example",
+      "commit": "1c4b9a2",
+      "summary": "Enable feature flag 'guest-checkout' for cohort B (Acme Corp included)",
+      "files_changed": ["feature-flags/cohort-b.yaml"],
+      "rollback_available": true,
+      "last_known_good": "v3.2.0"
+    }
+  ]
+}
